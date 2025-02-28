@@ -28,7 +28,7 @@ class StateMachine:
             files = json.load(f)
 
         # Restore files (simplified)
-        for path, content in files.items():
+    for path, content in files.items():
             with open(path, "w") as f:
                 f.write(content)
 
